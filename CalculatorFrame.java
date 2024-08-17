@@ -17,16 +17,13 @@ public class CalculatorFrame extends JFrame implements ActionListener {
     public CalculatorFrame() {
         setTitle("Calculator");
 
-        // Create input field
         inputField = new JTextField();
         inputField.setEditable(false);
         add(inputField, BorderLayout.NORTH);
 
-        // Create button panel
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new GridLayout(4, 4));
 
-        // Add buttons to button panel
         addButton = new JButton("+");
         addButton.addActionListener(this);
         buttonPanel.add(addButton);
